@@ -34,10 +34,9 @@ control.addEventListener("click", ()=>{
         
         
         hak -=1;
-        sonuc.innerText = ("Tebrikler");
-        
-        kaldıhakk.innerText = (`${5 - hak}. hakkınızda bildiniz :) `)
-        kalanhak1.innerText = ""
+        sonuc.innerText = ("Tebrikler");        
+        kaldıhakk.innerText = (`${5 - hak}. hakkınızda bildiniz :) `);
+        kalanhak1.innerText = "";
         enterNumber.disabled = true;
         control.disabled = true;
 
@@ -62,10 +61,8 @@ control.addEventListener("click", ()=>{
         
         
         else if (enterNumber.value > rndmsayı) {
-            sonuc.innerText = ("Biraz aşağı");
-            
-            kaldıhakk.innerText = (`${hak} deneme hakkınız kaldı`)
-
+            sonuc.innerText = ("Biraz aşağı");            
+            kaldıhakk.innerText = (`${hak} deneme hakkınız kaldı`);
             buyukyakın = enterNumber.value;
             kalanhak1.innerText = (`Lütfen ${kucukyakın} ile ${buyukyakın} arasında bir sayı girin.`);
             
