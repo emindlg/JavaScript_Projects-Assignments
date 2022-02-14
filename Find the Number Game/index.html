@@ -4,21 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+            
+            margin-top: 150px;
+            background: linear-gradient(
+                to right,
+                rgba(116, 126, 26, 0.932),
+                rgb(36, 36, 189)
+            );
+            text-align: center;
+            
+            
+        }
+
+        #inputguess{
+            height: 50px;
+            width: 220px;
+            border-radius: 1px solid;
+        }
+
+        #buton{
+            height: 50px;
+            border: 1px solid rgb(110, 174, 238);
+            background-color: dodgerblue;
+            box-shadow: 1px 2px 4px dodgerblue;
+            color: rgb(247, 242, 236);
+        
+        }
+
+        p{
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+
+        .container{
+            border: 1px solid white;
+            padding-top: 40px;
+            background-color: rgba(165, 178, 189, 0.644);
+            height: 350px;
+                        
+        }
+
+        h1{
+            color: goldenrod;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+       
+    </style>
+    
     <title>Find the Number Game</title>
 </head>
-<body>
+<body id="sayfayapısı">
 
-    <input type="number" id="inputguess">
-    <button id="buton">CHECK</button>
-    <p id="sonucyazısı"></p>
-    <p id="kalanhak"></p>
-    <p id="hakkımkaldı"></p>
+    <h1>Lütfen 0 ile 100 arasında bir sayı girin</h1>
 
-
-
-
-
-
+    <div class="container">
+        <input type="number" id="inputguess" placeholder="Lütfen bir sayı girin">
+        <button id="buton">CHECK</button>
+        <p id="sonucyazısı"></p>
+        <p id="kalanhak"></p>
+        <p id="hakkımkaldı"></p>
+    </div>
 
 
  <script src="./app.js"></script>   

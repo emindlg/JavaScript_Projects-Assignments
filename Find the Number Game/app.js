@@ -12,11 +12,14 @@ let kalanhak1 = document.getElementById("kalanhak");
 let kaldıhakk = document.getElementById("hakkımkaldı")
 
 
-const rndmsayı = Math.floor((Math.random()*30) + 1);
+let rndmsayı = Math.floor(Math.random()*101);
 
 
+let buyukyakın = 100;
+let kucukyakın = 0;
 
-let hak = 5;
+
+let hak = 8;
 
 
 
@@ -26,14 +29,19 @@ control.addEventListener("click", ()=>{
        
     
     
-    if (enterNumber.value == rndmsayı) {
+    if (enterNumber.value == rndmsayı && hak > 0) {
+
         
+        
+        hak -=1;
         sonuc.innerText = ("Tebrikler");
-        //kalanhak1.innerText = (`deneme sayısı ${sayac}`);
+        
         kaldıhakk.innerText = (`${5 - hak}. hakkınızda bildiniz :) `)
         kalanhak1.innerText = ""
-        
-        
+        enterNumber.disabled = true;
+        control.disabled = true;
+
+                           
         
     } 
     
@@ -43,34 +51,37 @@ control.addEventListener("click", ()=>{
 
         if (hak == 0){
             enterNumber.disabled = true;
+            control.disabled = true;
             kaldıhakk.innerText = ( "Üzgünüm..Hakkınız bitti :(" );
             sonuc.innerText = "";
             kalanhak1.innerText = ""
             
-            
-
-            
         }
+
+        
         
         
         else if (enterNumber.value > rndmsayı) {
             sonuc.innerText = ("Biraz aşağı");
             
             kaldıhakk.innerText = (`${hak} deneme hakkınız kaldı`)
-            kalanhak1.innerText = (`Lütfen 0 ile ${enterNumber.value} arasında bir sayı girin.`);
+
+            buyukyakın = enterNumber.value;
+            kalanhak1.innerText = (`Lütfen ${kucukyakın} ile ${buyukyakın} arasında bir sayı girin.`);
             
              
         } 
           else if (enterNumber.value < rndmsayı )
-        {
+        {   
+            kucukyakın = enterNumber.value;
             sonuc.innerText = ("Biraz yukarı");
-            kalanhak1.innerText = (`Lütfen ${enterNumber.value} ile 30 arasında bir sayı girin.`);
+            kalanhak1.innerText = (`Lütfen ${kucukyakın} ile ${buyukyakın} arasında bir sayı girin.`);
             kaldıhakk.innerText = (`${hak} deneme hakkınız kaldı`)
         }
     }
     
     
-       
+    
 })
 
 
