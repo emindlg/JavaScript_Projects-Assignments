@@ -87,7 +87,7 @@ h2, form{
 }
 
 #footer1{
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     background-color: #f2f2f2;
     height: 70px;
