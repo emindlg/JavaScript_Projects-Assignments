@@ -6,8 +6,10 @@ let trash = document.querySelector("#trash");
 
 
 
-icon.addEventListener("click", ()=>{    
-    let paragraph = document.createElement('p');
+icon.addEventListener("click", ()=>{
+    
+    if (inputform1.value != "") {
+        let paragraph = document.createElement('p');
     taskToDo.appendChild(paragraph);    
     paragraph.innerHTML = inputform1.value;
     inputform1.value = "";
@@ -21,6 +23,12 @@ icon.addEventListener("click", ()=>{
                 });
 
         });
+        
+    } else {
+        icon.disabled = true;
+        alert("please enter something to the text area");
+    }
+    
             
             
 });                 
