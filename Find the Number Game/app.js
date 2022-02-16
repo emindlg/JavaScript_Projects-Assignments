@@ -9,7 +9,7 @@ console.log(sonuc);
 
 let kalanhak1 = document.getElementById("kalanhak");
 
-let kaldıhakk = document.getElementById("hakkımkaldı")
+let kaldıhakk = document.getElementById("hakkımkaldı");
 
 
 let rndmsayı = Math.floor(Math.random()*101);
