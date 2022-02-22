@@ -46,12 +46,14 @@
 
 .operator1,.operator2,.operator3,.operator4,.operator5,.operator6,.operator7,.operator8{
     border: 1px solid;
-    padding-top: 12px;
+    /*padding-top: 10px;*/
     border-radius: 30px;
     border: none;
     background-color: rgb(214, 158, 55);
     color: white;
-    font-size: 22px;
+    font-size: 27px;
+    padding-top: 7px;
+    
 }
 
 #opyellow:hover{
@@ -66,7 +68,8 @@ input{
     border: none;
     background-color: black;
     color: white;
-    font-family: monospace;    
+    font-family: monospace; 
+      
 }
 
 input:hover{
