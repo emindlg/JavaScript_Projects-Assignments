@@ -4,6 +4,8 @@ let outputmillisec = document.getElementById("millisec");
 
 let buttons = document.getElementById("buttons");
 
+let notes = document.getElementById("notes");
+
 let start = document.getElementById("start");
 let clear = document.getElementById("clear");
 let pause = document.getElementById("pause");
@@ -13,9 +15,11 @@ let second = 00;
 let minutes = 00;
 
 let Interval;
-
+let count = 0;
 
 start.addEventListener("click", ()=>{
+
+    
     
     if (start.className == "bi bi-arrow-right-circle") {
         
@@ -27,7 +31,10 @@ start.addEventListener("click", ()=>{
     }
     clearInterval(Interval);    
     start.className = "bi bi-arrow-right-circle";
-    
+    count++;
+    let lap = document.createElement("p");
+    lap.innerText = `${count}. lap time: ${minutes.toString().padStart(2,"0")} : ${second.toString().padStart(2,"0")} : ${millisec.toString().padStart(2,"0")}`;
+    notes.appendChild(lap);
 });
 
 
@@ -37,6 +44,8 @@ clear.addEventListener("click", () =>{
    outputmillisec.innerText = "00";
    outputsecond.innerText = "00";
    outputminutes.innerText = "00";
+   notes.innerHTML = "";
+   count = 0;
 
 
 })
