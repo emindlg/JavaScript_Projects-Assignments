@@ -36,8 +36,16 @@
     background-color: rgb(93, 75, 75);
     color: aliceblue;
     font-family: monospace;
+    margin-bottom: 10px;
+    border-bottom:5px solid rgb(66, 11, 11) ;
+    
 }
 
 /*#pause{
     display: none;
+}*/
+
+/*p{
+    color: rgb(37, 105, 107);
+    font-size: large;
 }*/
