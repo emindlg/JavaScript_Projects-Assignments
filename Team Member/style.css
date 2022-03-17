@@ -1,0 +1,32 @@
+.vertical {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: small;
+    position: absolute;
+    color: rgba(250, 250, 198, 0.986);
+    font-size: 14px;
+    
+    
+  }
+
+  img{
+      
+      display: flex;
+      position: relative;
+      box-shadow: 1px 1px 7px 2px gray;
+  }
+
+  .darkmode{
+      background-color: black;
+      color:red;
+      border-color: black;
+      
+  }
+
+  .darkDiv{
+      /*border-color: black;*/
+  }
+
+  .card{
+      border-color: white;
+  }
